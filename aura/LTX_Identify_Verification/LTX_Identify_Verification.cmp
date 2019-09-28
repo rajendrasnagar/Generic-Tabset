@@ -1,0 +1,9 @@
+<aura:component >
+    <!-- This service will be used to pull credit details -->
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
+    
+    <aura:registerEvent name="sectionStatus" type="c:LTX_Section_Status"/>
+    
+</aura:component>

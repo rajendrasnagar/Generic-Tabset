@@ -1,0 +1,35 @@
+<aura:component >
+	<!-- This service will show popup section for credit pull request -->
+    <aura:attribute name="dialogTitle" type="String" required="true" default="Verify Identity"/>
+    <aura:attribute name="cancelLabel" type="String" required="true" default="Cancel"/>
+    <aura:attribute name="saveLabel" type="String" required="true" default="Save"/>
+    
+    <div aura:id="dialog" role="dialog" class="slds-modal slds-modal_large slds-fade-in-open"
+         style="width: 1000px;margin: auto;">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <button class="slds-button slds-modal__close " title="Close" onclick="{!c.cancel}">
+                    <lightning:icon iconName="utility:close" variant="bare" size="small"></lightning:icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 class="slds-text-heading--medium">{!v.dialogTitle}</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap slds-grid--align-spread">
+                <div aura:id="Container" style="width:100%">
+                    <!-- Dialog body here -->
+                </div>
+            </div>
+            <div class="slds-modal__footer">
+                <div class="slds-align_absolute-center">
+                    <lightning:button aura:id="cancel" iconName="utility:dock_panel" iconPosition="left" 
+                                      label="{!v.cancelLabel}" variant="neutral" type="reset"
+                                      onclick="{!c.cancel}"/>
+                    <lightning:button aura:id="submit" iconName="utility:save" 
+                                      label="{!v.saveLabel}" variant="brand" 
+                                      type="submit" onclick="{!c.save}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop_open"></div>
+</aura:component>

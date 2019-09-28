@@ -1,0 +1,12 @@
+<aura:component >
+    <!-- Define Aura attributes - Start -->
+    <aura:attribute name="fieldSets" type="list"/>
+    <aura:attribute name="recordId" type="String"/>
+    <!-- Define Aura attributes - End -->
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Body will be created dynamically on the basis of fieldSets passed -->
+    <div aura:id="content">
+    </div>
+</aura:component>

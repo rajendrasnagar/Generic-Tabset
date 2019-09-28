@@ -1,0 +1,22 @@
+<aura:component >
+    <!-- This service will be used to pull credit details -->
+	<aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="fields" type="list"/>
+
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
+    
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    
+    <force:recordData aura:id="recordHandler"
+                      recordId="{!v.recordId}"
+                      fields="{!v.fields}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      targetError="{!v.recordError}"
+                      mode="EDIT"/>
+    
+</aura:component>

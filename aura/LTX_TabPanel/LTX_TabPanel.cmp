@@ -1,0 +1,37 @@
+<!-- This component will contain tab panel information 
+Configurations:
+Create below custom metadata types to store Tab Panel informations:
+1. 'Tab Panel Wizard' -> Use this component as the Tab Container identifier. It identify tabs characterstics like 'Default', 'Icon Name', 'Tab Order' and 'Tab Panel Template Identifier'.
+2. 'TabPanel Component' -> Use this component to store details about the sections that will be hosted in the tab Container. It contains 'Tab Panel Container' reference, Object, Fieldset, screen type, icon, order etc informations.
+
+Code:
+1. Create a container component 'TabPanel'. Within this component, we will pass 'templateId' using which we will 
+dynamically generate the tabs. 
+2. We have a method in back end that sends us sorted tab labels (as per the order mentioned) with 'Tab Section' Records.
+3. These tab section records are passed to the TabContent component. In this component, we dynamically generate different sections as per the mdt passed.
+-->
+<aura:component implements="force:appHostable,lightning:isUrlAddressable" controller="LTX_TabPanel_CC">
+	
+    <!-- Define aura attributes here - Start -->
+    <aura:attribute name="tabsAre" type="Aura.Component[]"/>
+    <aura:attribute name="recordId" type="String" default="0030o00002go5RHAAY"/>
+    <aura:attribute name="responseMapIs" type="Object"/>
+    <aura:attribute name="defaultTab" type="String"/>
+    <aura:attribute name="tabPanelId" type="String" default="LoanTabPanel"/>
+    <!-- Define aura attributes here - End -->
+    
+    <!-- Define aura handlers here - Start -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Define aura handlers here - End -->
+    
+    <aura:dependency resource="markup://lightning:tab"/>
+    
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    
+    <lightning:tabset class="slds-p-around_small Tabset" selectedTabId="{!v.defaultTab}">
+    	<!-- Generate tabs dynamically -->
+        <aura:iteration items="{!v.tabsAre}" var="tab">
+        	{!tab}
+        </aura:iteration>
+    </lightning:tabset>
+</aura:component>

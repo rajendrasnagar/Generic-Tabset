@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute label="Enter Default tab Developer name" name="defaultTab"/>
+    <design:attribute label="Enter Tab Panel Template Id to use" name="tabPanelId"/>
+</design:component>
