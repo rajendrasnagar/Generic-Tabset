@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tab_Panel__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Tab Panel</label>
+    <referenceTo>Tab_Panel__mdt</referenceTo>
+    <relationshipLabel>TabPanel Components</relationshipLabel>
+    <relationshipName>TabPanel_Components</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

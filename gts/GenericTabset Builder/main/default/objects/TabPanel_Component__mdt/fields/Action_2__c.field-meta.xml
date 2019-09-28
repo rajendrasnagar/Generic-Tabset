@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_2__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Value should contain the Component Label that should be opened. Component name will be underscore separated.
+For example, if component name is &quot;Example 1&quot; then a button will appear with &quot;Example 1&quot; and component name should be &quot;Example_1&quot;.</inlineHelpText>
+    <label>Action 2</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
