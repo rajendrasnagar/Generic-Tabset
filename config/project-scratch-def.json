@@ -3,7 +3,7 @@
   "edition": "Developer",
   "features": [],
   "settings": {
-    "orgPreferenceSettings": {
+    "orgPreferenceSettings":{
       "s1DesktopEnabled": true
     }
   }
