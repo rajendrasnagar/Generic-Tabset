@@ -1,4 +1,4 @@
-public with Sharing class LTX_SectionComponent_CC {
+public with Sharing class LTX_SectionComponent_CC{
 	@AuraEnabled(cacheable=true)
     public static String sampleCall(String fieldSetName){
         System.debug('fs name:'+fieldSetName);
