@@ -8,9 +8,9 @@
 
 1. Below is the configuration schema that is used to generate the tab & tab sections dynamically. In Aura Components, Sections are generated dynamically. However, in LWC sections needs to be generated on load itself.
 
+![Screenshot](https://user-images.githubusercontent.com/3901703/81552678-88a8c100-93a1-11ea-91ed-f4429f77bb99.png)
 
-[Image: image.png]
-Custom Metadata Types:
+## Custom Metadata Types:
 
 Create below custom metadata types to store Tab Panel information's:
 
@@ -32,10 +32,10 @@ Aura Version: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t
 1. Use the installation link provided to install the package. 
 2. Assign user ‘Generic Tabset’ permission set.
 3. Example of custom metadata type used for the demo:
-    1. [Image: image.png]
+    1. ![Screenshot](https://user-images.githubusercontent.com/3901703/81553612-08835b00-93a3-11ea-8f8d-d6efb312750f.png)
 4. Sample Schema used for the demo:
-    1. [Image: image.png]
+    1. ![image](https://user-images.githubusercontent.com/3901703/81554269-1b4a5f80-93a4-11ea-9030-b8c82f527dd9.png)
 5. After installation, go to setup tab & click on ‘Generate Data’.
 6. Click on “Show Demo” & it will navigate to the tab displaying demo setup data as below.
 
-[Image: image.png]
+![image](https://user-images.githubusercontent.com/3901703/81554322-34531080-93a4-11ea-87c6-40c01033ac89.png)
