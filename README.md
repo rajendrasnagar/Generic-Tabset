@@ -1,4 +1,4 @@
-This is an Aura based Component to generic tabset dynamically using declarations stored in Custom Metadata types. 
+This is an Aura based Component to generate tabset declaratively using Custom metadata types. Go ahead and install the package in your org to play with it.
 
 # ED Diagram
 
