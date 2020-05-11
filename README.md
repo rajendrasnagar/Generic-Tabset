@@ -1,3 +1,5 @@
+This is an Aura based Component to generic tabset dynamically using declarations stored in Custom Metadata types. 
+
 # ED Diagram
 
 ## Object Schema:
@@ -39,3 +41,6 @@ Aura Version: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t
 6. Click on “Show Demo” & it will navigate to the tab displaying demo setup data as below.
 
 ![image](https://user-images.githubusercontent.com/3901703/81554322-34531080-93a4-11ea-87c6-40c01033ac89.png)
+
+Cheers,
+Rajendra Singh Nagar
